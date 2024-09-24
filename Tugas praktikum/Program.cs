@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Tugas_praktikum.Classes;
 
 namespace Program
@@ -19,20 +19,24 @@ namespace Program
             kebunBinatang.TambahHewan(ular1);
             kebunBinatang.TambahHewan(buaya1);
 
-            kebunBinatang.daftarhewan();
-
-            Console.WriteLine(ular1.suara("ssss")); 
+            Console.WriteLine(ular1.suara("ssss"));
             ular1.infohewan();
 
-            Console.WriteLine(singa1.suara("aung")); 
+            Console.WriteLine(singa1.suara("aung"));
             singa1.infohewan();
             singa1.mengaung();
+            Console.WriteLine(singa1.infohewan());
 
-            Console.WriteLine(gajah1.suara("purrr")); 
+            Console.WriteLine(gajah1.suara("purrr"));
             gajah1.infohewan();
 
             Console.WriteLine(buaya1.suara("rawr"));
             buaya1.infohewan();
+
+            kebunBinatang.daftarhewan();
+
+            Reptil reptil = new Buaya("huha", 9, 10);
+            Console.WriteLine(reptil.suara("rawr"););
         }
     }
 }
