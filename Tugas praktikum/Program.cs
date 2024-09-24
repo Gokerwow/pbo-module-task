@@ -19,19 +19,20 @@ namespace Program
             kebunBinatang.TambahHewan(ular1);
             kebunBinatang.TambahHewan(buaya1);
 
+            kebunBinatang.daftarhewan();
+
             Console.WriteLine(ular1.suara("ssss")); 
             ular1.infohewan();
 
             Console.WriteLine(singa1.suara("aung")); 
             singa1.infohewan();
+            singa1.mengaung();
 
             Console.WriteLine(gajah1.suara("purrr")); 
             gajah1.infohewan();
 
             Console.WriteLine(buaya1.suara("rawr"));
             buaya1.infohewan();
-
-            kebunBinatang.daftarhewan();
         }
     }
 }
