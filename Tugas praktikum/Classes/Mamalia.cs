@@ -19,5 +19,10 @@ namespace Tugas_praktikum.Classes
         {
             return $"{nama} sedang bersuara {suara}";
         }
+
+        public override string infohewan()
+        {
+            return $"Nama Hewan : {nama}\nUmur Hewan : {umur}\nJumlah Kaki : ";
+        }
     }
 }
